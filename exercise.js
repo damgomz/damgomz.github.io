@@ -291,7 +291,7 @@ class Tool {
 				.attr('y', my + height/2 + confusion_height * 0.25)
 				.attr('text-anchor', 'middle')
 				.attr('dominant-baseline', 'middle')
-				.attr("fill", color_rect_hor_2)
+				.attr("fill", '#420D09')
 				.attr('font-weight', 'bold')
 
 		this.svg.append('text')
@@ -301,7 +301,7 @@ class Tool {
 				.attr('y', my + height/2 + confusion_height * 0.25)
 				.attr('text-anchor', 'middle')
 				.attr('dominant-baseline', 'middle')
-				.attr("fill", color_rect_vert_2)
+				.attr("fill", '#071630')
 				.attr('font-weight', 'bold')
 
 		/*__________________________________________________________________________*/
