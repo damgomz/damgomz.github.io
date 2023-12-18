@@ -291,7 +291,7 @@ class Tool {
 				.attr('y', my + height/2 + confusion_height * 0.25)
 				.attr('text-anchor', 'middle')
 				.attr('dominant-baseline', 'middle')
-				.attr("fill", '#420D09')
+				.attr("fill", '#FFCCCB')
 				.attr('font-weight', 'bold')
 
 		this.svg.append('text')
@@ -301,7 +301,7 @@ class Tool {
 				.attr('y', my + height/2 + confusion_height * 0.25)
 				.attr('text-anchor', 'middle')
 				.attr('dominant-baseline', 'middle')
-				.attr("fill", '#071630')
+				.attr("fill", '#DAF0FF')
 				.attr('font-weight', 'bold')
 
 		/*__________________________________________________________________________*/
@@ -532,11 +532,11 @@ class Tool {
 			}
 			if (contain(d3.select('.vertical_rect_2'), d)){
 				TP += 1
-				return '#071630'
+				return '#DAF0FF'
 			} 
 			if (contain(d3.select('.horizontal_rect'), d)){
 				FP += 1
-				return '#420D09'
+				return '#FFCCCB'
 			} else {
 				TN += 1
 				return color_rect_hor_2
