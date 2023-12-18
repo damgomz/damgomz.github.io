@@ -291,7 +291,7 @@ class Tool {
 				.attr('y', my + height/2 + confusion_height * 0.25)
 				.attr('text-anchor', 'middle')
 				.attr('dominant-baseline', 'middle')
-				.attr("fill", '#FFCCCB')
+				.attr("fill", '#FFEDED')
 				.attr('font-weight', 'bold')
 
 		this.svg.append('text')
@@ -536,7 +536,7 @@ class Tool {
 			} 
 			if (contain(d3.select('.horizontal_rect'), d)){
 				FP += 1
-				return '#FFCCCB'
+				return '#FFEDED'
 			} else {
 				TN += 1
 				return color_rect_hor_2
