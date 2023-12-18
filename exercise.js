@@ -445,7 +445,7 @@ class Tool {
 						d3.select('.P_rate').attr('x', mx + (d3.event.x - mx)/2).text((((TP + FN)/(FP+TN+TP+FN)) * 100).toFixed(2).toString() + '%')
 						d3.select('.N_rate').attr('x', d3.event.x + (width - (d3.event.x - mx))/2).text((((TN + FP)/(FP+TN+TP+FN)) * 100).toFixed(2).toString() + '%')
 
-						d3.select('.num_tested').text((TP+FP).toString() + ' tests positifs')
+						d3.select('.num_tested').text((TP+FP).toString() + ' positive tests')
 
 					}
 				})
@@ -482,7 +482,7 @@ class Tool {
 						  .text((FP/(FP+TN)).toString())
 						  .text(((FP/(FP+TN)) * 100).toFixed(2).toString() + '%')
 
-						d3.select('.num_tested').text((TP+FP).toString() + ' tests positifs')
+						d3.select('.num_tested').text((TP+FP).toString() + ' positive tests')
 					}
 				})
 				.on("start", function () {d3.select(this).raise().attr("stroke", "black");})
@@ -516,7 +516,7 @@ class Tool {
 						  .attr('transform', 'rotate(-90,' + (mx - gap_rate).toString() + ',' + (d3.event.y + (height - (d3.event.y - my))/2).toString() +')')
 						  .text(((TP/(FN+TP)) * 100).toFixed(2).toString() + '%')
 
-						d3.select('.num_tested').text((TP+FP).toString() + ' tests positifs')
+						d3.select('.num_tested').text((TP+FP).toString() + ' positive tests')
 					}
 				})
 				.on("start", function () {d3.select(this).raise().attr("stroke", "black");})
